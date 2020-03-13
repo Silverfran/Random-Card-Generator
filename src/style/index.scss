@@ -1,4 +1,42 @@
 @import "~bootstrap/scss/bootstrap.scss";
+html,
+body {
+  height: 100%;
+  background-color: green;
+  text-align: center;
+}
+button {
+  margin: 20px;
+}
+
+#container {
+  display: inline-block;
+  margin: 2rem;
+}
+
+#card {
+  border-radius: 2rem;
+  width: 234.33px;
+  height: 332.59px;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 4rem;
+  position: relative;
+  background: white;
+}
+
+#content::before {
+  content: attr(data-content);
+  position: absolute;
+  top: 0px;
+  left: 20px;
+}
+#content::after {
+  content: attr(data-content);
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+}
 
 /* 
     body{
